@@ -96,6 +96,52 @@
 
 		git pull origin(库名？) master(分支名) 从远端更新代码！！
 
+		Everything up-to-date是没有可用更新，不是提交更新了
+
+		git pull若出现多人协作bug则在本机add com那个小伙伴的修改然后在pull push
+
+		git tag <gatName>(v1.0)在当前分支当前最新commit上创建标签
+
+		git tag 查看所有标签
+
+		git tag <tagName> <(某次提交的版本号)>为特定提交创建标签
+
+		git tag -a <tagName> -m "文字说明" <(某次提交号)>带说明创建
+
+		git show <tagName>查看说明文字
+
+		git tag -s ......................................采用RGP签名(暂不好使，待研究)
+
+		git tag -d <tagName>删除标签
+
+		git push origin <tagName>向远端推送某标签
+
+		git push origin --tags一次性推送全部标签
+ 
+	 	在远端删除某标签
+			1.先在本地删除：git tag -d <tagName>
+			2.在推送到远端，命令不同：git push origin :refs/tags/<tagName>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
