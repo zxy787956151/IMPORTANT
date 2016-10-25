@@ -53,8 +53,9 @@
 
 		push到远程库 
 			git push origin master
-			git push 远程库名 master (-u)
-
+			git push 远程库名 (origin) master (-u)
+			git push 远程库名 dev:将dev分支推送到远端
+			
 		git clone git@github.com:github用户名(不是账号)/远程库名.git
 
 		git branch dev	创建分支
@@ -88,12 +89,12 @@
 		
 		git remote (-v)查看远程库信息(详细信息)
 	
+		多人协作时，所有人克隆到都只是项目文件夹，所有人的git都是从此目录打开
+
+		git checkout -b dev origin/dev小伙伴克隆你的分支
 
 
-
-
-
-
+		git pull origin(库名？) master(分支名) 从远端更新代码！！
 
 
 
