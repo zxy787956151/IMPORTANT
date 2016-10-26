@@ -126,7 +126,20 @@
 
 		git config --global color.ui弹出true，自定义git配置项，让git变得更棒！！
 
+		.gitignore文件创建在git工作目录下，这个文件定义里git将忽略那些文件，被忽略到文件将无需提交，当然也不能push
 
+                git add -f <fileName>当你强行add被忽略类型文件时，会提示已被忽略，强行提交加-f
+
+                git check-ignore -v <fileName>觉得哪个文件操作不了有问题，此命令查看这个文件是否被忽略等等
+
+                git config --global alias.你自己的简写命令 原命令：配置命令别名，防止自己敲错命令
+                        ps:git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+                对任何配置文件修改命令中，--global是针对当前用户，不加是针对当前库
+
+                查看本库的配置文件：cat .git/config
+
+                查看当前用户的配置文件，在用户主目录下执行：cat .gitconfig
 
 
 
