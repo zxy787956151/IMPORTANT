@@ -136,3 +136,7 @@ MySQL的数据类型:
 create table zxy_user (id int unsigned not null primary key auto_increment, username char(20) not null default '' unique, password char(32) not null default '', logintime int(10) unsigned not null default 0, loginip char(20) not null default '');
 
 insert into zxy_user set username='admin', password = md5('admin'), logintime = unix_timestamp(now()), loginip = '127.0.0.1'; 
+
+explain 
+
+ALTER TABLE blackmail_protection CONVERT TO CHARACTER SET utf8mb4;
